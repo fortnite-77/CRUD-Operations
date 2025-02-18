@@ -15,6 +15,8 @@ app.get('/posts', (req, res) => {
   res.status(200).json(posts);
 });
 
+
+
 // Get a single post by ID
 app.get('/posts/:id', (req, res) => {
   const post = posts.find(p => p.id === parseInt(req.params.id));

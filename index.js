@@ -10,8 +10,6 @@ let posts = [
   { id: 2, title: 'Second Blog Post', content: 'Content for the second blog post goes here.' }
 ];
 
-
-
 // Get all posts
 app.get('/posts', (req, res) => {
   res.status(200).json(posts);
